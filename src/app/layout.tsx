@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
+import bilLogo from "@/assets/images/bil-logo.jpg";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Brand Investment Limited Nigeria delivers sustainable growth through agro allied production, construction, automobile services, and textile marketing.",
   icons: {
-    icon: "/images/logos/bil-logo.jpg",
+    icon: bilLogo.src,
   },
 };
 

@@ -22,3 +22,12 @@ coverage/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# --- safety block ---
+__pycache__/
+*.pyc
+node_modules/
+.vercel/
+.env
+*.log
+

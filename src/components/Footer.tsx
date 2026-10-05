@@ -11,7 +11,7 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="space-y-4">
                         <h3 className="font-serif text-2xl font-bold tracking-tight">
-                            Brand Investment Ltd
+                            Brand <span className="text-bil-gold">Investment</span> Ltd
                         </h3>
                         <p className="text-bil-text-secondary text-sm leading-relaxed max-w-xs">
                             Driving sustainable growth across Nigeria through excellence in production, construction, and services.

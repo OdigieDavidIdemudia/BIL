@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+import bilLogo from "../assets/images/bil-logo.jpg";
 
 export default function HeroSection() {
     return (
@@ -60,9 +62,13 @@ export default function HeroSection() {
                             <div className="absolute top-10 right-10 w-64 h-80 bg-bil-neutral rounded-sm z-0" />
                             <div className="absolute top-0 right-0 w-full h-full border border-bil-divider z-10" />
                             <div className="absolute bottom-10 left-10 w-72 h-64 bg-slate-900 z-20 overflow-hidden shadow-2xl">
-                                {/* Placeholder for real corporate imagery */}
-                                <div className="w-full h-full bg-gradient-to-br from-bil-black to-gray-800 flex items-center justify-center text-white/20 font-serif text-4xl">
-                                    BIL
+                                <div className="relative w-full h-full bg-bil-white flex items-center justify-center overflow-hidden">
+                                    <Image
+                                        src={bilLogo}
+                                        alt="BIL Logo"
+                                        fill
+                                        className="object-contain p-8"
+                                    />
                                 </div>
                             </div>
                             <div className="absolute top-1/2 left-0 w-1 h-32 bg-bil-gold z-30 transform -translate-y-1/2" />

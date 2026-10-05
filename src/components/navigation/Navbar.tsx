@@ -15,6 +15,8 @@ const navLinks = [
     { name: "Contact", href: "/contact" },
 ];
 
+import bilLogo from "../../assets/images/bil-logo.jpg";
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false); // Mobile Menu
     const [isServicesOpen, setIsServicesOpen] = useState(false); // Services Dropdown
@@ -30,15 +32,15 @@ export default function Navbar() {
                     <Link href="/" className="flex-shrink-0 flex items-center gap-2">
                         <div className="relative h-12 w-12">
                             <Image
-                                src="/images/logos/bil-logo.jpg"
+                                src={bilLogo}
                                 alt="BIL Logo"
                                 fill
-                                className="object-contain"
+                                className="object-contain" // mix-blend-multiply might help if white bg
                                 priority
                             />
                         </div>
                         <span className="font-serif text-xl font-bold tracking-tight text-bil-black hidden sm:block">
-                            Brand Investment Ltd
+                            Brand <span className="text-bil-gold">Investment</span> Ltd
                         </span>
                     </Link>
 
